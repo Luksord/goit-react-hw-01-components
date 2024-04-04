@@ -8,11 +8,12 @@ import { FriendList } from './FriendList/FriendList';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 
 const appStyles = {
-  height: '100vh',
+  // height: '100vh',
   display: 'flex',
+  flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
-  fontSize: 40,
+  // fontSize: 40,
   color: '#010101',
 };
 
@@ -28,7 +29,7 @@ export const App = () => {
       >
         <p>tekst</p>
       </Profile>
-      <Statistics title={data.title} stats={data}></Statistics>
+      <Statistics title={'Upload Stats'} stats={data}></Statistics>
       <FriendList friends={friends}></FriendList>
       <TransactionHistory transactions={transactions}></TransactionHistory>
     </div>
